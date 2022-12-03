@@ -1,0 +1,467 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&display=swap");
+
+* {
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  height: auto;
+
+  text-transform: none;
+  transition: all 0.2s linear;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+
+body {
+  background: #f7f7f7;
+  font-family: "Poppins", sans-serif;
+  margin: auto;
+}
+
+
+header {
+
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.7rem 10%;
+  height: 6.5rem;
+  background-color: #fff;
+  box-shadow: 0 1px 4px rgba(146, 161, 176, 0.3);
+}
+
+img {
+  width: 320px;
+}
+
+.box-container {
+  padding-left: 40%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-items: left;
+}
+
+h1 {
+  font-size: xx-large;
+}
+
+section {
+  min-height: 20vh;
+  padding: 0.5rem 9%;
+  border: #000;
+}
+
+header .navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header .navbar li {
+  margin-left: 2.5rem;
+}
+
+header .navbar ul li a {
+  font-size: 1.57rem;
+  color: #0e2431;
+  font-weight: 600;
+  text-decoration: none;
+  letter-spacing: 0.04rem;
+  transition: 0.2s;
+}
+
+header .navbar ul li a.active,
+header .navbar ul li a:hover {
+  color: #011aff;
+  border-bottom: 0.2rem solid #011aff;
+  padding: 0.5rem 0;
+}
+
+#menu {
+  font-size: 3rem;
+  cursor: pointer;
+  color: rgb(24, 2, 63);
+  display: none;
+}
+
+@media (max-width: 768px) {
+  #menu {
+    display: block;
+  }
+
+  header .navbar {
+    position: fixed;
+    top: 6.5rem;
+    right: -120%;
+    width: 75%;
+    height: 100%;
+    text-align: left;
+    align-items: flex-start;
+    background-color: #0e0f31;
+  }
+
+  header .navbar ul {
+    flex-flow: column;
+    padding: 1rem;
+  }
+
+  header .navbar ul li {
+    text-align: center;
+    width: 100%;
+    margin: 1rem 0;
+    border-radius: 0.5rem;
+    width: 26rem;
+  }
+
+  header .navbar ul li a {
+    display: block;
+    padding: 1rem;
+    text-align: left;
+    color: #fff;
+    font-size: 2rem;
+  }
+
+  header .navbar ul li a.active,
+  header .navbar ul li a:hover {
+    padding: 1rem;
+    color: #fff;
+    border-radius: 0.5rem;
+    border-bottom: 0.5rem solid #011aff;
+  }
+
+  .fa-times {
+    transform: rotate(180deg);
+  }
+
+  header .navbar.nav-toggle {
+    right: 0;
+  }
+}
+
+.home {
+  display: flex;
+  align-items: center;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.home .content h3 {
+  font-size: 2.5rem;
+  color: #000;
+  font-weight: 500;
+  padding: 1rem 10;
+}
+
+.home .content {
+
+  padding-top: 0.5ch;
+  font-size: x-large;
+}
+
+.home .content p {
+  font-size: 2.5rem;
+  color: #000;
+  font-weight: 500;
+  padding: 1rem 10;
+}
+
+table {
+  font-size: 2.5rem;
+  font-family: 'Times New Roman', Times, serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td,
+th {
+  font-size: 2.5rem;
+  border: 1px solid #dddddd;
+  text-align: center;
+  padding: 20px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+.content h1 {
+  font-family: 'Times New Roman', Times, serif;
+}
+
+
+
+
+
+.Career {
+  display: flex;
+  align-items: center;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.Career .content h3 {
+  font-size: 2.5rem;
+  color: #000;
+  font-weight: 500;
+  padding: 1rem 10;
+}
+
+.Career .content {
+
+  padding-top: 0.5ch;
+  font-size: x-large;
+}
+
+.Career .content p {
+  font-size: 2.5rem;
+  color: #000;
+  font-weight: 500;
+  padding: 1rem 10;
+}
+
+.Qualification {
+  display: flex;
+  align-items: center;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.Qualification .content h3 {
+  font-size: 2.5rem;
+  color: #000;
+  font-weight: 500;
+  padding: 1rem 10;
+}
+
+.Qualification .content {
+
+  padding-top: 0.5ch;
+  font-size: x-large;
+}
+
+.Qualification .content p {
+  font-size: 2.5rem;
+  color: #000;
+  font-weight: 500;
+  padding: 1rem 10;
+}
+
+.Tech {
+  display: flex;
+  align-items: center;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.Tech .content h3 {
+  font-size: 2.5rem;
+  color: #000;
+  font-weight: 500;
+  padding: 1rem 10;
+}
+
+.Tech .content {
+
+  padding-top: 0.5ch;
+  font-size: x-large;
+}
+
+.Tech .content p {
+  font-size: 2.5rem;
+  color: #000;
+  font-weight: 500;
+  padding: 1rem 10;
+}
+
+.Soft {
+  display: flex;
+  align-items: center;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.Soft .content h3 {
+  font-size: 2.5rem;
+  color: #000;
+  font-weight: 500;
+  padding: 1rem 10;
+}
+
+.Soft .content {
+
+  padding-top: 0.5ch;
+  font-size: x-large;
+}
+
+.Soft .content p {
+  font-size: 2.5rem;
+  color: #000;
+  font-weight: 500;
+  padding: 1rem 10;
+}
+
+.Interests {
+  display: flex;
+  align-items: center;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.Interests .content h3 {
+  font-size: 2.5rem;
+  color: #000;
+  font-weight: 500;
+  padding: 1rem 10;
+}
+
+.Interests .content {
+
+  padding-top: 0.5ch;
+  font-size: x-large;
+}
+
+.Interests .content p {
+  font-size: 2.5rem;
+  color: #000;
+  font-weight: 500;
+  padding: 1rem 10;
+}
+
+.Projects {
+  display: flex;
+  align-items: center;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.Projects .content h3 {
+  font-size: 2.5rem;
+  color: #000;
+  font-weight: 500;
+  padding: 1rem 10;
+}
+
+.Projects .content {
+
+  padding-top: 0.5ch;
+  font-size: x-large;
+}
+
+.Projects .content p {
+  font-size: 2.5rem;
+  color: #000;
+  font-weight: 500;
+  padding: 1rem 10;
+}
+
+.Certification {
+  display: flex;
+  align-items: center;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.Certification .content h3 {
+  font-size: 2.5rem;
+  color: #000;
+  font-weight: 500;
+  padding: 1rem 10;
+}
+
+.Certification .content {
+
+  padding-top: 0.5ch;
+  font-size: x-large;
+}
+
+.Certification .content p {
+  font-size: 2.5rem;
+  color: #000;
+  font-weight: 500;
+  padding: 1rem 10;
+}
+
+
+.WorkShops {
+  display: flex;
+  align-items: center;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.WorkShops .content h3 {
+  font-size: 2.5rem;
+  color: #000;
+  font-weight: 500;
+  padding: 1rem 10;
+}
+
+.WorkShops .content {
+
+  padding-top: 0.5ch;
+  font-size: x-large;
+}
+
+.WorkShops .content p {
+  font-size: 2.5rem;
+  color: #000;
+  font-weight: 500;
+  padding: 1rem 10;
+}
+
+
+
+.Hobbies {
+  display: flex;
+  align-items: center;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.Hobbies .content h3 {
+  font-size: 2.5rem;
+  color: #000;
+  font-weight: 500;
+  padding: 1rem 10;
+}
+
+.Hobbies .content {
+
+  padding-top: 0.5ch;
+  font-size: x-large;
+}
+
+.Hobbies .content p {
+  font-size: 2.5rem;
+  color: #000;
+  font-weight: 500;
+  padding: 1rem 10;
+}
+
+.Delcaration {
+  display: flex;
+  align-items: center;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.Delcaration .content h3 {
+  font-size: 2.5rem;
+  color: #000;
+  font-weight: 500;
+  padding: 1rem 10;
+}
+
+.Delcaration .content {
+
+  padding-top: 0.5ch;
+  font-size: x-large;
+}
+
+.Delcaration .content p {
+  font-size: 2.5rem;
+  color: #000;
+  font-weight: 500;
+  padding: 1rem 10;
+}
